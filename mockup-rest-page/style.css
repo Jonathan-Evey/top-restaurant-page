@@ -1,0 +1,670 @@
+*,
+*::before,
+*::after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.hidden {
+    display: none;
+}
+
+body {
+    font-family: 'Saira Condensed', sans-serif;
+}
+
+
+header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo {
+    margin-left: 2rem;
+    width: 18rem;
+    margin-bottom: 1rem;
+    height: 10rem;
+    background-image: url("/home/gunnar/Desktop/assets/Gilligan's_Logo.jpg");
+    background-position: center;
+    background-size: cover;
+}
+.nav-container {
+    display: flex;
+    align-items: center;
+}
+
+.main-nav {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.8);
+    z-index: 2;
+}
+
+.main-nav li {
+    font-family: 'Teko', sans-serif;
+    font-size: 2rem;
+    list-style: none;
+    width: 75vw;
+    padding: 2rem 0rem;
+}
+
+.main-nav-links {
+    color: black;
+    position: relative;
+    text-decoration: none;
+}
+
+.title-main-grab {
+    display: grid;
+    place-items: center;
+    background-image: url(https://www.morro-bay.ca.us/ImageRepository/Document?documentID=9062);
+    background-position: center;
+    background-size: cover;
+    background-color: rgba(70, 73, 94, 0.4);
+    background-blend-mode: multiply;
+    height: 80vh;
+    width: 100vw;
+    clip-path: polygon(0 0, 100% 0, 100% 95%, 0% 100%);
+}
+
+.main-title-container {
+    text-align: center;
+    color: black;
+    width: 75%;
+    padding: 5rem 0rem 4.5rem 0rem;
+    background-color: rgba(255, 255, 255, 0.95);
+    clip-path: polygon(0 5%, 100% 0, 100% 95%, 0 100%);
+}
+
+.about-background p,
+.main-title {
+    font-family: 'Teko', sans-serif;
+    font-size: 5em;
+    color: rgb(255, 0, 0);
+    margin-bottom: -2.5rem;
+}
+
+.main-sub-title{
+    color: rgb(255, 0, 0);
+    font-weight: 700;
+    font-size: 1.5em;
+    margin-bottom: -.25rem;
+}
+.main-sub-title-two{
+    color: black;
+    margin-bottom: 1rem;
+}
+
+.main-section-title,
+.section-two-title {
+    height: 50px;
+    background-color: white;
+}
+
+.main-section {
+    color: white;
+    padding: 4rem 2rem;
+    height: 100%;
+    width: 100vw;
+    background-image: url(/home/gunnar/Desktop/assets/Store_Inside.jpg);
+    background-color: rgba(34, 34, 34, 0.6);
+    background-blend-mode: multiply;
+    background-position: center;
+    background-size: cover;
+    clip-path: polygon(0 3%, 100% 0, 100% 97%, 0% 100%);
+    overflow: scroll;
+}
+
+.shop-text {
+    color: rgba(255, 255, 255, 0.9);
+    height: 40vh;
+    padding: 4rem 2rem;
+    clip-path: polygon(0 12%, 100% 0, 100% 88%, 0% 100%);
+    font-size: 1.75rem;
+    font-weight: 700;
+}
+
+.left-top {
+    background-image: url("/home/gunnar/Desktop/assets/Gilligan's.jpg");
+    background-position: center;
+    background-size: cover;
+    opacity: .95;
+}
+
+.right-top,
+.left-bottom {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.9);
+}
+
+.right-bottom {
+    grid-area: top;
+    background-image: url("/home/gunnar/Desktop/assets/Soup_and_Sandwich.jpg");
+    background-position: center;
+    background-size: cover;
+    opacity: .95;
+}
+
+.right-top {
+    grid-area: bottom;
+}
+
+.section-two {
+    margin-top: 2rem;
+    font-size: 1.5rem;
+    font-weight: 700;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+
+}
+
+.section-two h4,
+.contact-email h4 {
+    margin-bottom: 1rem;
+    font-size: 2rem;
+    color: rgb(255, 0, 0);
+}
+
+
+ol {
+    list-style: none;
+}
+
+.contact-address, 
+.contact-phone,
+.contact-email {
+    margin-bottom: 2rem;
+}
+
+.hours-card {
+    padding-bottom: 2rem;
+    display: grid;
+    grid-template-areas: 
+        "h4 h4"
+        "ol-days ol-hours";
+}
+
+
+.ol-days {
+    grid-area: ol-days;
+}
+.ol-hours {
+    grid-area: ol-hours;
+}
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2rem;
+    color: white;
+    background-color: black;
+    height: 20vh;
+    clip-path: polygon(0 20%, 100% 0, 100% 100%, 0% 100%);
+}
+
+.designer-info-container {
+    margin-top: 1rem;
+}
+
+.designer-info-container p {
+    display: flex;
+}
+
+.designer-info-container a {
+    padding-left: 0.25rem;
+    display: flex;
+}
+
+.designer-info-container img {
+    margin: auto 0 auto 0.25rem;
+    width: 1rem;
+    height: 1rem;
+    filter: invert(100%);
+}
+
+.designer-info-container a:hover {
+    cursor: pointer;
+    color: red;
+}
+
+/*---------------Menu Styles---------------------*/
+.title-main-grab-menu {
+    height: 30vh;
+    padding: 3rem 0rem 3rem 0rem;
+}
+
+.main-title-container-menu {
+    padding: 1rem 0rem;
+    width: 80%;
+    background-color: rgba(255, 255, 255, 0.90);
+    clip-path: polygon(0 10%, 100% 0, 100% 90%, 0 100%); 
+}
+
+.main-title-menu {
+    font-family: 'Saira Condensed', sans-serif;
+    margin-bottom: 0;
+}
+
+.main-section-breakline {
+    margin-top: -1.25rem;
+    margin-bottom: 4rem;
+    height: 80px;
+    background-color: black;
+    clip-path: polygon(0 25%, 100% 0, 100% 75%, 0 100%);
+}
+
+.menu-container,
+.build-your-own-model {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.menu-left-container,
+.menu-right-container {
+    width: 60%;
+}
+
+.menu-type {
+    padding-bottom: 4rem;
+}
+
+.build-option-title h3, 
+.menu-type-title h3 {
+    font-size: 3rem;
+    color: rgb(255, 0, 0);
+}
+
+.build-option-title p,
+.menu-type-title p {
+    font-weight: 700;
+    margin-top: -0.75rem;
+}
+
+.build-option-card h6,
+.menu-type-card h6 {
+    font-size: 1.75rem;
+    margin-top: 1rem;
+    margin-bottom: -.5rem;
+}
+
+.build-option-card p,
+.menu-type-card p {
+    font-size: 1.3rem;
+}
+
+.menu-type-card h6 span {
+    margin-left: 1rem;
+}
+
+.soup h6:last-child {
+    margin-top: -0.75rem;
+}
+
+.build-your-own-model span,
+.soup h6 span {
+    margin-left: 0.5rem;
+}
+
+.build-your-own-model {
+    width: 100%;
+}
+
+.build-your-own-popup-btn {
+    cursor: pointer;
+    font-family: 'Saira Condensed', sans-serif;
+    font-weight: 700;
+    color: white;
+    background-color: black;
+    border: none;
+    font-size: 2.75rem;
+    padding: .75rem 3rem;
+    clip-path: polygon(0 13%, 100% 0, 100% 87%, 0 100%);
+}
+
+.build-your-own-popup-btn:hover {
+    color: black;
+    background-color: red;
+}
+
+dialog {
+    margin: auto;
+    padding: .5rem;
+    background-color: white;
+    border: none;
+    border-radius: 10px;
+}
+
+dialog::backdrop {
+    background: rgba(0, 0, 0, 0.75);
+}
+
+.build-your-own-header-container {
+    display: flex;
+}
+
+.build-your-own-title-container {
+    padding: 0rem 4rem 1rem 2rem;
+}
+
+.close-btn-span:hover,
+.close-btn:hover {
+    cursor: pointer;
+}
+
+.close-btn span {
+    position: absolute;
+    margin: 0;
+    top: 0;
+    left: 0;
+    clip-path: polygon(20% 0%, 0% 20%, 30% 50%, 0% 80%, 20% 100%, 50% 70%, 80% 100%, 100% 80%, 70% 50%, 100% 20%, 80% 0%, 50% 30%);
+    background-color: black;
+}
+
+.close-btn-span,
+.close-btn {
+    width: 25px;
+    height: 25px;
+}
+
+.close-btn {
+    margin-top: .5rem;
+    position: relative;
+    border: none;
+    background-color: transparent;
+    padding: 1rem;
+}
+
+.build-your-own-title-container span {
+    color: black;
+}
+
+.build-your-own-options-container {
+    margin: 0 auto;
+    width: 80%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.build-option-card p {
+    margin-bottom: -0.6rem;
+}
+
+.meat {
+    padding-bottom: 2rem;
+}
+
+.extra-options-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2rem;
+}
+
+.build-option-card span,
+.build-option-extra h6 {
+    color: rgb(255, 0, 0);
+}
+
+/*-----------About Styles---------------*/
+.about-breakline {
+    margin-bottom: 2rem;
+}
+
+.about-background {
+    height: 65vh;
+}
+
+.about-section-container {
+    height: 65vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.about-background p {
+    font-weight: 700;
+}
+
+/*---------------Location Styles-----------------*/
+.location-background {
+    margin: -5.5rem 0 -4.5rem 0;
+    background-image: url(https://www.morro-bay.ca.us/ImageRepository/Document?documentID=9062);
+    background-color: rgba(59, 59, 59, 0.75);
+    background-blend-mode: multiply;
+    background-position: center;
+    background-size: cover;
+}
+
+.location-section-container {
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+@media (max-width: 599px) {
+    .cards-right {
+        display: grid;
+        grid-template-areas: 
+            "top"
+            "bottom";
+    }
+}
+
+@media (max-width: 799px) {
+    .main-nav {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    justify-content: center;
+    }
+
+    .toggle-nav-btn-container {
+        position: fixed;
+        top: 5rem;
+        right: 3rem;
+        z-index: 3;
+    }
+
+    .toggle-nav-btn {
+        position: fixed;
+        border: none;
+        top: 4rem;
+        right: 3.5rem;
+        background-color: transparent;
+    }
+
+    .toggle-nav-btn:hover {
+        cursor: pointer;
+    }
+
+    .toggle-nav-btn:hover .toggle-nav-close {
+        background-color: red;
+    }
+    .toggle-nav-btn:hover .toggle-nav-open {
+        background-image: url(/home/gunnar/Desktop/assets/imagesred.jpg);
+    }
+    
+    .toggle-nav-btn-container,
+    .toggle-nav-btn,
+    .toggle-nav-open,
+    .toggle-nav-close {
+        width: 45px;
+        height: 45px;
+    }
+
+    .toggle-nav-close {
+        position: fixed;
+        top: 4rem;
+        right: 3.5rem;
+        clip-path: polygon(20% 0%, 0% 20%, 30% 50%, 0% 80%, 20% 100%, 50% 70%, 80% 100%, 100% 80%, 70% 50%, 100% 20%, 80% 0%, 50% 30%);
+        background-color: black;
+        opacity: 1;
+    }
+
+    .toggle-nav-open {
+        position: fixed;
+        top: 4rem;
+        right: 3.5rem;
+        clip-path: circle(50% at 50% 50%);
+        background-image: url(/home/gunnar/Desktop/assets/images.png);
+        background-size: cover;
+    }
+
+    .main-nav li:hover{
+        cursor: pointer;
+        background-color: rgba(0, 0, 0, 0.75);
+    }
+    
+    .main-nav li:hover a{
+        color: red;
+    }
+}
+
+@media (min-width: 600px) {
+    .main-section {
+        clip-path: polygon(0 5%, 100% 0, 100% 95%, 0% 100%);
+        padding: 4rem 2rem;
+        display: grid;
+        grid-template-columns: repeat(2, 40%);
+        justify-content: center;
+        column-gap: 3rem;
+        align-items: center;
+    }
+    .shop-text {
+        clip-path: polygon(0 5%, 100% 0, 100% 95%, 0% 100%);
+    }
+    .left-top,
+    .right-top {
+        margin-bottom: 2rem;
+    }
+    .cards-left {
+        margin-top: 2.75rem;
+    }
+}
+
+@media (min-width: 800px) {
+    .main-nav {
+        position: relative;
+        flex-direction: row;
+    }
+    .main-nav li {
+        width: 8rem;
+    }
+    .main-nav:last-child {
+        margin-right: 4rem;
+    }
+
+    .main-nav-links:hover {
+        color: red;
+    }
+
+    .main-nav-links::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        height: 4px;
+        background: currentcolor;
+        transition: transform 250ms ease-in;
+        transform: scalex(0);
+        transform-origin: right;
+        color: rgb(255, 0, 0);
+    }
+    
+    .main-nav-links:hover::after {
+        transform: scalex(1);
+        transform-origin: left;
+        color: rgb(255, 0, 0);
+    }
+
+    .main-title-container {
+        width: 60%;
+    }
+
+    .section-two {
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: flex-start;
+    }
+
+    .hours-card {
+        padding-bottom: 0;
+    }
+
+    .hours-card h4 {
+        padding-bottom: 2rem;
+    }
+
+    /*--------------Menu Styles-----------*/
+
+    .main-title-container-menu {
+        width: 80%;
+    }
+
+    .menu-container {
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: center;
+    }
+    .menu-left-container {
+        width: 50%;
+        padding: 0 1rem 0 4rem;
+    }
+    .menu-right-container {
+        width: 45%;
+        padding: 0 1rem;
+    }
+}
+
+@media (min-width: 1200px) {
+    header {
+        justify-content: flex-start;
+    }
+
+    .nav-container {
+        flex-grow: 1;
+    }
+
+    .main-nav {
+        width: 100%;
+        justify-content: space-between;
+    }
+    .main-nav:last-child {
+        margin-right: 8rem;
+    }
+    .main-nav:first-child {
+        margin-left: 8rem;
+    }
+
+    .main-title-container {
+        width: 50%;
+    }
+    .main-section {
+        grid-template-columns: repeat(2, 30%);
+        column-gap: 9rem;
+    }
+    .left-top,
+    .right-top {
+        margin-bottom: 4rem;
+    }
+    /*------------Menu Styles---------*/
+    .main-title-container-menu {
+        width: 70%;
+    }
+    .menu-container {
+        margin: 0 auto;
+        width: 70%;
+        justify-content: space-evenly;
+    }
+    .menu-right-container {
+        padding-left: 6rem;
+    }
+}

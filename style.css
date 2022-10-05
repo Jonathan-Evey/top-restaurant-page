@@ -6,8 +6,6 @@
 	box-sizing: border-box;
 }
 
-@import url("https://fonts.googleapis.com/css2?family=Saira+Condensed:wght@400;700&family=Teko&display=swap");
-
 .hidden {
 	display: none;
 }
@@ -21,12 +19,16 @@ header {
 	justify-content: space-between;
 }
 
+footer {
+	padding-block: 4rem;
+}
+
 .logo {
 	margin-left: 2rem;
 	width: 18rem;
 	margin-bottom: 1rem;
 	height: 10rem;
-	background-image: url("./Gilligan's_Logo.jpg");
+	background-image: url("./assets/Gilligan's_Logo.jpg");
 	background-position: center;
 	background-size: cover;
 }
@@ -65,7 +67,7 @@ header {
 .title-main-grab {
 	display: grid;
 	place-items: center;
-	background-image: url(./Morro_Bay_Rock.jpeg);
+	background-image: url("./assets/Morro_Bay_Rock.jpeg");
 	background-position: center;
 	background-size: cover;
 	background-color: rgba(70, 73, 94, 0.4);
@@ -114,7 +116,7 @@ header {
 	padding: 4rem 2rem;
 	height: 100%;
 	width: 100vw;
-	background-image: url(./Store_Inside.jpg);
+	background-image: url("./assets/Store_Inside.jpg");
 	background-color: rgba(34, 34, 34, 0.6);
 	background-blend-mode: multiply;
 	background-position: center;
@@ -132,7 +134,7 @@ header {
 }
 
 .left-top {
-	background-image: url("./Gilligan's.jpg");
+	background-image: url("./assets/Gilligan's.jpg");
 	background-position: center;
 	background-size: cover;
 	opacity: 0.95;
@@ -148,7 +150,7 @@ header {
 
 .right-bottom {
 	grid-area: top;
-	background-image: url("./Soup_and_Sandwich.jpg");
+	background-image: url("./assets/Soup_and_Sandwich.jpg");
 	background-position: center;
 	background-size: cover;
 	opacity: 0.95;
@@ -159,7 +161,7 @@ header {
 }
 
 .section-two {
-	margin-top: 2rem;
+	padding-block: 4rem;
 	font-size: 1.5rem;
 	font-weight: 700;
 	display: flex;
@@ -449,7 +451,7 @@ dialog::backdrop {
 /*---------------Location Styles-----------------*/
 .location-background {
 	margin: -5.5rem 0 -4.5rem 0;
-	background-image: url(./Morro_Bay_Rock.jpeg);
+	background-image: url("./assets/Morro_Bay_Rock.jpeg");
 	background-color: rgba(59, 59, 59, 0.75);
 	background-blend-mode: multiply;
 	background-position: center;
@@ -468,6 +470,9 @@ dialog::backdrop {
 		grid-template-areas:
 			"top"
 			"bottom";
+	}
+	.about-section-container p {
+		text-align: center;
 	}
 }
 
@@ -510,7 +515,7 @@ dialog::backdrop {
 		background-color: red;
 	}
 	.toggle-nav-btn:hover .toggle-nav-open {
-		background-image: url(./imagesred.jpg);
+		background-image: url("./assets/imagesred.jpg");
 	}
 
 	.toggle-nav-btn-container,
@@ -548,7 +553,7 @@ dialog::backdrop {
 		top: 4rem;
 		right: 3.5rem;
 		clip-path: circle(50% at 50% 50%);
-		background-image: url(./images.jpg);
+		background-image: url("./assets/images.jpg");
 		background-size: cover;
 	}
 

@@ -28,14 +28,12 @@ import updatePageView from "./render.js";
 
 	function checkEventClass(element) {
 		if (element.classList.contains("go-to-main")) {
-			console.log("main");
 			removeAllNodes();
 			updatePageView.updateToMainHTML();
 			loadNavClickListener();
 			openCloseMainNav();
 		}
 		if (element.classList.contains("go-to-menu")) {
-			console.log("menu");
 			removeAllNodes();
 			updatePageView.updateToMenuHTML();
 			loadNavClickListener();
@@ -44,14 +42,12 @@ import updatePageView from "./render.js";
 			openCloseMainNav();
 		}
 		if (element.classList.contains("go-to-about")) {
-			console.log("about");
 			removeAllNodes();
 			updatePageView.updateToAboutHTML();
 			loadNavClickListener();
 			openCloseMainNav();
 		}
 		if (element.classList.contains("go-to-location")) {
-			console.log("location");
 			removeAllNodes();
 			updatePageView.updateToLocationHTML();
 			loadNavClickListener();

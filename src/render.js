@@ -1,7 +1,8 @@
 const updatePageView = (() => {
-  const updateToMainHTML = () => {
-      document.body.insertAdjacentHTML("afterbegin", 
-            `<header>
+	const updateToMainHTML = () => {
+		document.body.insertAdjacentHTML(
+			"afterbegin",
+			`<header>
             <div class="logo">
             </div>
             <div class="nav-container">
@@ -100,14 +101,16 @@ const updatePageView = (() => {
           </main>
           <footer>
             <div class="designer-info-container">
-              <p>Designed by <a href="https://github.com/NighIsTheEnd">NighIsTheEnd</a></p>
+              <p>Designed by <a href="https://github.com/Jonathan-Evey">Jonathan Evey</a></p>
             </div>
-          </footer>`);
-    }
-    
-  const updateToMenuHTML = () => {
-    document.body.insertAdjacentHTML("afterbegin", 
-    `<header>
+          </footer>`
+		);
+	};
+
+	const updateToMenuHTML = () => {
+		document.body.insertAdjacentHTML(
+			"afterbegin",
+			`<header>
       <div class="logo">
       </div>
       <div class="nav-container">
@@ -303,15 +306,16 @@ const updatePageView = (() => {
     </main>
     <footer>
       <div class="designer-info-container">
-          <p>Designed by <a href="https://github.com/NighIsTheEnd">NighIsTheEnd</a></p>
+          <p>Designed by <a href="https://github.com/Jonathan-Evey">Jonathan Evey</a></p>
       </div>
     </footer>`
-    );
-  }
+		);
+	};
 
-  const updateToAboutHTML = () => {
-    document.body.insertAdjacentHTML("afterbegin", 
-      `<header>
+	const updateToAboutHTML = () => {
+		document.body.insertAdjacentHTML(
+			"afterbegin",
+			`<header>
         <div class="logo">
         </div>
         <div class="nav-container">
@@ -342,13 +346,15 @@ const updatePageView = (() => {
       </main>
       <footer>
         <div class="designer-info-container">
-          <p>Designed by <a href="https://github.com/NighIsTheEnd">NighIsTheEnd</a></p>
+          <p>Designed by <a href="https://github.com/Jonathan-Evey">Jonathan Evey</a></p>
         </div>
-      </footer>`);
-  } 
-  const updateToLocationHTML = () => {
-    document.body.insertAdjacentHTML("afterbegin", 
-      `<header>
+      </footer>`
+		);
+	};
+	const updateToLocationHTML = () => {
+		document.body.insertAdjacentHTML(
+			"afterbegin",
+			`<header>
         <div class="logo">
         </div>
         <div class="nav-container">
@@ -417,16 +423,17 @@ const updatePageView = (() => {
       </main>
       <footer>
         <div class="designer-info-container">
-          <p>Designed by <a href="https://github.com/NighIsTheEnd">NighIsTheEnd</a></p>
+          <p>Designed by <a href="https://github.com/Jonathan-Evey">Jonathan Evey</a></p>
         </div>
-      </footer>`);
-  }
-    return {
-      updateToMainHTML,
-      updateToMenuHTML,
-      updateToAboutHTML,
-      updateToLocationHTML,
-    };
+      </footer>`
+		);
+	};
+	return {
+		updateToMainHTML,
+		updateToMenuHTML,
+		updateToAboutHTML,
+		updateToLocationHTML,
+	};
 })();
 
 export default updatePageView;
